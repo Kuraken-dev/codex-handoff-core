@@ -1,6 +1,6 @@
 # Security policy and threat boundaries
 
-Status: pre-release local candidate. No production security assurance or hosted service is offered.
+Status: published v0.1 reference project. No production security assurance or hosted service is offered.
 
 ## Trust model
 
@@ -14,17 +14,17 @@ Persist intent before executing; stop after uncertain outcome; preserve journal 
 
 The library does not sandbox callbacks or prevent their network access. No live callback is shipped. Do not import arbitrary executors or trust policy/enrollment from an envelope. Keep a private future queue minimally permissioned and do not expose it to public issue/comment execution. Protect journal directories and backups from untrusted write access.
 
-## Private reporting proposal and release gate
+## Private vulnerability reporting
 
-No public repository or vulnerability inbox exists yet. No email address or unverified reporting endpoint is provided. GitHub Private vulnerability reporting is the proposed route; it is NOT enabled or tested for this project.
+The public repository is [kenjikurashiki/codex-handoff-core](https://github.com/kenjikurashiki/codex-handoff-core). GitHub Private vulnerability reporting is enabled. Its API status was verified as enabled and the public Advisories page showed Report a vulnerability. Use [that private reporting route](https://github.com/kenjikurashiki/codex-handoff-core/security/advisories); GitHub sign-in may be required. No email address is provided.
 
-Before publication/inviting users, the owner must separately authorize repository creation, configure Private vulnerability reporting for the public repository and verify the private report form and maintainer notifications. If the setting cannot be prepared until the repository is public, keep the transition controlled: enable and verify it immediately after the separately authorized visibility step and before announcing the release or inviting reports. Record actual configuration separately. If unavailable, stop release promotion until a real private route is approved and verified. Do not claim a currently usable form from a guessed repository URL.
+No test vulnerability report or notification-delivery test was submitted. Enabled configuration and the visible private-report link do not establish end-to-end notification delivery. Recheck the setting and reporting link for future releases; if unavailable, pause release promotion until a private route is verified.
 
-GitHub documents this feature for public-repository owners/admins: https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository . This document performs no configuration. Do not disclose credentials, signed capabilities, payloads or operational records in public issues. Supported scope at release is v0.1 reference code; no hosted service or security response SLA is promised.
+GitHub documents this feature for public-repository owners/admins: https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository . Configuration was performed separately using the authorized repository administration API. Do not disclose credentials, signed capabilities, payloads or operational records in public issues. Supported scope at release is v0.1 reference code; no hosted service or security response SLA is promised.
 
 ## Release hygiene
 
-Run the provided scan and inspect all files, history (if later initialized), fixtures and screenshots. The scanner is a heuristic, not proof of no secrets. Do not import old Git history or production logs. Keep public code and private operational evidence separate. Review dependency and license inventories and remove generated demo journals before publication.
+Run the provided scan and inspect all files, Git history, fixtures and screenshots. The scanner is a heuristic, not proof of no secrets. Do not import old Git history or production logs. Keep public code and private operational evidence separate. Review dependency and license inventories and remove generated demo journals before future publication updates.
 
 ## Reconciliation and active execution
 

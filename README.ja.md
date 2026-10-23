@@ -1,10 +1,10 @@
-# Codex Handoff Core — v0.1 公開提案候補
+# Codex Handoff Core — v0.1
 
 **命令処理と検証済み内容の引継ぎを、小さなオフライン実装で示します。**
 
 [English](README.md) · [構成](docs/ARCHITECTURE.md) · [安全性](SECURITY.md) · [限界](docs/LIMITATIONS.md)
 
-公開前の候補です。MITをプロジェクトのライセンス案として収録しています（最終内容・公開確認前）。第三者素材は元の条件を維持し、実 transport / executor は含みません。外部通信、障害迂回、実チャット操作、本番 exactly-once の成功実績を示すものではありません。OSS 化だけでは上流サービスの障害を回避できません。
+公開済みの参照実装です。新規作成した部分にはMITライセンスを採用しています。第三者素材は元の条件を維持し、実 transport / executor は含みません。外部通信、障害迂回、実チャット操作、本番 exactly-once の成功実績を示すものではありません。OSS 化だけでは上流サービスの障害を回避できません。
 
 ## デモの流れ
 
@@ -42,20 +42,20 @@ node scripts/check-public-tree.mjs
 
 受理・実行・業務完了は別です。SUCCEEDED は executor の申告結果で、外部業務の独立証明ではありません。手動経路の申告や照合 evidence ID は信頼された運用者入力です。checksum は悪意ある台帳改変を防ぎません。詳細は SECURITY と LIMITATIONS を参照してください。
 
-## 構成と公開前確認
+## 構成と公開時の確認
 
 汎用コアとローカル台帳に、架空デモ executor を接続しています。既存担当chatへ命令を渡す独立transportは未確認です。B方式は別担当への内容受渡しを限定評価したもので、自動チャットAPIは同梱しません。将来の GitHub queue は非公開運用を前提とし、公開 issue/comment を実行権限として信用しません。
 
-実 adapter は [ADAPTERS](docs/ADAPTERS.md) の条件を別途満たす必要があります。現運用の直接経路と予備待機には変更を加えません。旧 Git 履歴・実業務データ・内部チャット識別子・実ログは持ち込んでいません。公開 repo 作成、push、visibility 変更、資格情報や永続権限の追加は行っていません。
+実 adapter は [ADAPTERS](docs/ADAPTERS.md) の条件を別途満たす必要があります。現運用の直接経路と予備待機には変更を加えません。旧 Git 履歴・実業務データ・内部チャット識別子・実ログは持ち込んでいません。本人の承認に基づいて公開repoを作成し、検査済みファイルをpushしました。資格情報や永続権限の追加は行っていません。
 
-日英 README、設計・セットアップ・デモ・tests・安全性・限界・貢献手順・ライセンス候補・依存ライセンス一覧を用意しています。[公開前チェック](docs/RELEASE_CHECKLIST.md)で内容とライセンスを利用者が確認した後に公開を判断します。
+日英 README、設計・セットアップ・デモ・tests・安全性・限界・貢献手順・ライセンス・依存ライセンス一覧を用意しています。[公開時の確認記録と今後のチェック](docs/RELEASE_CHECKLIST.md)を参照してください。
 
-## 名称・ライセンスの提案
+## 公開先・ライセンス
 
-repo案は `kenjikurashiki/codex-handoff-core`、表示名案は **Codex Handoff Core** です。確認済みのアカウント名だけを使い、氏名・法人名は推測しません。repoは未作成で、名前の予約や商標確認を保証しません。
+公開repoは [kenjikurashiki/codex-handoff-core](https://github.com/kenjikurashiki/codex-handoff-core)、表示名は **Codex Handoff Core** です。確認済みのアカウント名だけを使い、氏名・法人名は推測しません。公開は商標確認を保証するものではありません。
 
 OpenAIの公式製品ではなく、OpenAIとの提携・推奨を示すものではありません。任意利用の公式Codex CLIは別製品で同梱せず、オフライン検証には不要です。
 
-新規作成した部分のライセンス案は[MIT](LICENSE)です。[第三者表記](THIRD_PARTY_NOTICES.md)のRFC公開値は元の権利・条件を維持します。[選定理由と留意点](docs/LICENSE_DECISION.md)も確認してください。この別ローカル候補を用意したことで、旧候補の状態や公開許可が変更されることはありません。最終内容・権利・公開の確認は未了です。
+新規作成した部分のライセンスは[MIT](LICENSE)です。[第三者表記](THIRD_PARTY_NOTICES.md)のRFC公開値は元の権利・条件を維持します。[選定理由と留意点](docs/LICENSE_DECISION.md)も確認してください。本人の公開承認に基づき掲載しています。旧ローカル候補と当時の状態記録は別途保全しています。
 
-セキュリティ窓口にはGitHub Private vulnerability reportingを提案していますが、まだ設定していません。公開issueへ秘密を投稿しないでください。公開利用者を招く前に所有者が窓口を設定・確認する条件は[SECURITY](SECURITY.md)に記載しています。
+GitHub Private vulnerability reportingは有効化済みで、APIの有効状態と公開画面のReport a vulnerabilityリンクを確認しました。[非公開報告窓口](https://github.com/kenjikurashiki/codex-handoff-core/security/advisories)を利用し、公開issueへ秘密を投稿しないでください。実際の報告送信・通知到達テストは未実施です。詳細は[SECURITY](SECURITY.md)を参照してください。

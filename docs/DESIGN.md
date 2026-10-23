@@ -1,6 +1,8 @@
 # v0.1 design and implementation plan
 
-Status: authorized local-only public candidate; not published, MIT proposed; final content/rights/publication approval pending.
+Current status: published v0.1 under MIT for original material. Private vulnerability reporting is enabled and API/public-link verified; report submission and notification delivery were not tested.
+
+The design, plan and acceptance criteria below are the historical pre-publication plan, retained as such; they are not a statement that publication or license selection is still pending.
 Purpose: an inspectable portfolio demonstrating conservative command processing, not a working chat outage bypass.
 
 ## Boundary

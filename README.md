@@ -1,10 +1,10 @@
-# Codex Handoff Core — v0.1 release proposal
+# Codex Handoff Core — v0.1
 
 **A small offline reference for conservative command processing and verified content handoff.**
 
 [日本語](README.ja.md) · [Architecture](docs/ARCHITECTURE.md) · [Security](SECURITY.md) · [Limitations](docs/LIMITATIONS.md)
 
-> Public-release candidate, not published. MIT is the proposed project license, pending final release/content approval; third-party material retains its own terms. No live transport or executor is included. This project has not demonstrated a network-outage bypass, chat automation, or production exactly-once delivery.
+> Published reference project under MIT for original project material; third-party material retains its own terms. No live transport or executor is included. This project has not demonstrated a network-outage bypass, chat automation, or production exactly-once delivery.
 
 ## What the demo shows
 
@@ -64,16 +64,16 @@ The manual route fields and reconciliation evidence IDs are trusted operator inp
 
 Future real adapters must satisfy the [adapter contract](docs/ADAPTERS.md). A private GitHub queue could transport envelopes, but public issues/comments must never be trusted as executable instructions. No GitHub adapter or credential loader is shipped.
 
-## Before publication
+## Release checks
 
-Review code, docs, the MIT proposal and [release checklist](docs/RELEASE_CHECKLIST.md). This tree contains no inherited Git history or real operational records. Local review/test receipts live outside this candidate. There is no CI workflow with repository permissions, publishing script, network client, shell executor, or automatic failover.
+Review code, docs, the MIT license and [release checklist](docs/RELEASE_CHECKLIST.md). This tree contains no inherited Git history or real operational records. Local review/test receipts live outside this candidate. There is no CI workflow with repository permissions, publishing script, network client, shell executor, or automatic failover.
 
-## Proposed identity and license
+## Repository and license
 
-Proposed repository: `kenjikurashiki/codex-handoff-core`; display name: **Codex Handoff Core**. The owner handle was confirmed separately; no legal person or company name is inferred. This repository has not been created. Name availability, reservation and trademark clearance are not guaranteed.
+Repository: [kenjikurashiki/codex-handoff-core](https://github.com/kenjikurashiki/codex-handoff-core); display name: **Codex Handoff Core**. The owner handle was confirmed separately; no legal person or company name is inferred. Publication does not establish trademark clearance.
 
 This is an independent community project, not an official OpenAI product, and is not affiliated with or endorsed by OpenAI. The optional official Codex CLI is a separate product, is not bundled and is not needed for offline tests.
 
-The proposed [MIT license](LICENSE) covers original project material, subject to [third-party notices](THIRD_PARTY_NOTICES.md). The RFC verification constants retain their original attribution and terms. See [license rationale](docs/LICENSE_DECISION.md). This local proposal neither publishes the project nor changes the earlier candidate's license status. Final content, rights and publication approval remain pending.
+The [MIT license](LICENSE) covers original project material, subject to [third-party notices](THIRD_PARTY_NOTICES.md). The RFC verification constants retain their original attribution and terms. See [license rationale](docs/LICENSE_DECISION.md). This repository was published with the owner's approval. Earlier local candidates and their historical status are preserved separately.
 
-Private vulnerability reporting is proposed, not configured. Do not send sensitive reports to public issues. The owner must configure and verify a private reporting route before inviting public users; see [SECURITY](SECURITY.md).
+Private vulnerability reporting is enabled: its API status and the public Report a vulnerability link were verified. Use the [private reporting route](https://github.com/kenjikurashiki/codex-handoff-core/security/advisories), not public issues, for sensitive reports. No test report or notification-delivery test was submitted; see [SECURITY](SECURITY.md).

@@ -17,7 +17,7 @@ Meaningful behavior tests cover admission without execution, manual routing, ide
 
 A stale lock, truncated file, sequence gap or checksum error stops work. There is no automatic repair, lock expiry, retry, ledger deletion, resend or UNKNOWN-to-ACCEPTED path. Even RESOLVED_NOT_EXECUTED remains terminal; designing a new authorized action is outside automatic recovery.
 
-The simulation checksum is public and forgeable, never authentication. The demo's fictional success must not be marketed as an external communication test or production deployment. A license decision and human content review are still required before publishing.
+The simulation checksum is public and forgeable, never authentication. The demo's fictional success must not be marketed as an external communication test or production deployment. Future publication updates still require human content and ownership/third-party-rights review; the current project license is MIT for original material.
 
 ## Reconciliation and active execution
 

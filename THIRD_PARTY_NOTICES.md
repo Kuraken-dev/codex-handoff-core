@@ -1,6 +1,6 @@
 # Dependencies, rights and license inventory
 
-The proposed project MIT grant covers original project material only. It does not relicense third-party material, convey another party's rights or identify the account owner as an upstream author. Final ownership/contribution and release review are pending.
+The project MIT grant covers original project material only. It does not relicense third-party material, convey another party's rights or identify the account owner as an upstream author. Future contributions and releases still require ownership and third-party-rights review.
 
 | Item | Bundled? | License / treatment |
 |---|---|---|
@@ -8,7 +8,7 @@ The proposed project MIT grant covers original project material only. It does no
 | Node.js built-in modules | External runtime, not bundled | Node project license is primarily MIT plus its bundled third-party notices; use the actual installed distribution's LICENSE. Official reference: https://github.com/nodejs/node/blob/main/LICENSE |
 | RFC 8032 verification constants | Public values only in tests | Unmodified empty-message public key/signature values, section 7.1; original RFC/IETF Trust terms and notice below, not the project's MIT grant |
 | Official Codex CLI | Not bundled; optional external tool | Consult the actual distribution's license/notices (the previously consulted official package declares Apache-2.0). No upstream code/binary is copied |
-| Original project source/docs | Yes | Proposed MIT; see LICENSE and docs/LICENSE_DECISION.md; final publication review pending |
+| Original project source/docs | Yes | MIT; see LICENSE and docs/LICENSE_DECISION.md |
 
 Built-ins: crypto, fs, path, os, url, assert/strict, test. No Node/OpenSSL/CLI binary, upstream implementation source or generated credential is included. Runtime license obligations belong to the runtime distribution; this tree does not redistribute that distribution.
 

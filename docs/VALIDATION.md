@@ -1,4 +1,6 @@
-# Local validation record
+# Historical local validation record
+
+Current repository status: published with owner approval. Private vulnerability reporting is enabled and its API status/public reporting link were verified. Actual report submission and notification delivery were not tested. The table and local-validation observations below record the earlier offline validation phase, not the subsequent publication operations.
 
 The candidate was checked offline on Windows with Node.js 24.16.0. These are local model results, not deployment or operational certification.
 
