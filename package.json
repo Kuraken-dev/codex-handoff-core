@@ -1,0 +1,17 @@
+{
+  "name": "codex-handoff-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline conservative command processing and host-verified stdin handoff reference",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "demo": "node examples/demo.mjs",
+    "scan": "node scripts/check-public-tree.mjs",
+    "demo:stdin": "node examples/stdin-handoff-demo.mjs"
+  },
+  "license": "MIT"
+}

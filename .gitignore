@@ -1,0 +1,9 @@
+node_modules/
+.demo-*/
+.local-journal/
+coverage/
+.env
+.env.*
+*.pem
+*.key
+*.log

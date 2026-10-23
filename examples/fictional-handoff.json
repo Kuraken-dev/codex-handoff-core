@@ -1,0 +1,1 @@
+{"jobId":"demo-handoff","lines":[{"sku":"alpha","unitPoints":5,"units":2},{"sku":"beta","unitPoints":4,"units":3},{"sku":"alpha","unitPoints":5,"units":1},{"sku":"gamma","unitPoints":2,"units":4}],"task":"group-order-lines"}
